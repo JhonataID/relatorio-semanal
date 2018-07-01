@@ -1,0 +1,34 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01/07/2018, 10:27:53
+    Author     : jhomi
+*/
+
+label {
+    -fx-padding: 15px;
+}
+
+.button {
+    -fx-background-color: greenyellow;
+/*    -fx-font: 15px Ariel;
+    -fx-border-radius: 50;*/
+    -fx-font-size: 1.2em;
+    -fx-background-radius: 25 8;
+}
+
+.button:hover {
+    -fx-background-color: red;
+}
+
+.pane-config {
+   -fx-margen: 10px;
+   -fx-background-color: gray;
+}
+
+.pane-config label {
+    -fx-padding: 10px 10px 10px 10px;
+}
