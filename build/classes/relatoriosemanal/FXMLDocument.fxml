@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.web.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,41 +9,41 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" minHeight="400.0" minWidth="900.0" prefHeight="415.0" prefWidth="900.0" styleClass="principal" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="relatoriosemanal.FXMLDocumentController">
+<AnchorPane id="AnchorPane" fx:id="acpMain" maxHeight="567.0" maxWidth="763.0" minHeight="396.0" minWidth="746.0" prefHeight="396.0" prefWidth="746.0" styleClass="principal" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="relatoriosemanal.FXMLDocumentController">
    <children>
-      <Pane prefHeight="400.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane layoutY="178.0" prefHeight="396.0" prefWidth="746.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Group styleClass="Group">
+            <Pane layoutX="25.0" layoutY="25.0">
                <children>
-                  <TextField layoutX="121.0" layoutY="23.0" />
-                  <Label layoutX="25.0" layoutY="27.0" text="Projeto:" />
+                  <TextField fx:id="txtProjeto" layoutX="96.0" prefHeight="25.0" prefWidth="174.0" styleClass="text-config" />
+                  <Label fx:id="lblProjeto" layoutY="4.0" text="Projeto:" />
                </children>
-            </Group>
-            <Group>
+            </Pane>
+            <Pane layoutX="384.0" layoutY="23.0">
                <children>
-                  <TextField layoutX="717.0" layoutY="23.0" />
-                  <Label layoutX="520.0" layoutY="22.0" prefHeight="30.0" prefWidth="174.0" text="Numero de referência:" />
+                  <TextField fx:id="txtNumeroRef" layoutX="197.0" layoutY="1.0" AnchorPane.rightAnchor="0.0" />
+                  <Label fx:id="lblNumeroRef" prefHeight="30.0" prefWidth="174.0" text="Numero de referência:" />
                </children>
-            </Group>
-            <Group>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="73.0">
                <children>
-                  <TextField layoutX="121.0" layoutY="73.0" />
-                  <Label layoutX="25.0" layoutY="77.0" text="Objetivo:" />
+                  <TextField fx:id="txtObjetivo" layoutX="96.0" prefHeight="25.0" prefWidth="609.0" />
+                  <Label fx:id="lblObjetivo" layoutY="4.0" text="Objetivo:" />
                </children>
-            </Group>
-            <Group layoutY="-13.0">
+            </Pane>
+            <Pane layoutX="25.0" layoutY="119.0">
                <children>
-                  <Label layoutX="25.0" layoutY="137.0" text="Tempo estimado:" />
-                  <TextField layoutX="121.0" layoutY="133.0" />
+                  <Label fx:id="lblTempoEstimando" layoutY="4.0" text="Tempo estimado:" />
+                  <TextField fx:id="txtTempoEstimando" layoutX="96.0" prefHeight="25.0" prefWidth="174.0" />
                </children>
-            </Group>
-            <Group>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="169.0">
                <children>
-                  <Label layoutX="25.0" layoutY="183.0" text="Material:" />
-                  <TextArea layoutX="121.0" layoutY="192.0" prefHeight="200.0" prefWidth="200.0" />
+                  <Label fx:id="lblMaterial" text="Material:" />
+                  <TextArea fx:id="txtMaterial" layoutX="71.0" prefHeight="200.0" prefWidth="200.0" />
                </children>
-            </Group>
-            <Button layoutX="469.0" layoutY="224.0" mnemonicParsing="false" prefHeight="127.0" prefWidth="261.0" style="-fx-border-radius: 0.2;" text="Iniciar Desenvolvimento" />
+            </Pane>
+            <Button fx:id="btnIniciar" layoutX="426.0" layoutY="206.0" mnemonicParsing="false" onAction="#btnIniciarHandler" prefHeight="127.0" prefWidth="261.0" style="-fx-border-radius: 0.2;" text="Iniciar Desenvolvimento" />
          </children>
       </Pane>
    </children>
